@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "create-elm-app": "^5.22.0",
+    "tailwindcss": "^2.1.2",
+    "postcss": "^8.3.0",
+    "autoprefixer": "^10.2.6"
+  }
+}
