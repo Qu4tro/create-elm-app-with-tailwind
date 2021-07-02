@@ -14,8 +14,8 @@ yarn add tailwindcss postcss autoprefixer
 cat <<EOT > tailwind.config.js
 module.exports = {
 	  purge: [
-		'./src/**/*.html',
-		'./src/**/*.elm',
+                './src/**/*.html',
+                './src/**/*.elm',
 	  ],
 	  theme: {},
 	  variants: {},
@@ -38,12 +38,11 @@ EOT
 - Setup css. This step appends to the css file. If you something there, you may want to clean it up.
 ``` 
 cat <<EOT >> src/main.css
-module.exports = {
-    plugins: [
-      require('tailwindcss')('./tailwind.config.js'),
-      require("autoprefixer")
-    ],
-  };
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
 EOT
 ```
 
